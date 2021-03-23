@@ -5,15 +5,16 @@ const path = require('path');
 var app = express();
 var bodyParser = require('body-parser');
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname, '../public')));
+console.log(__dirname + '/public');
 app.use(cors());
 
 let port = 3000;
 
 
-app.get('/', (req, res) => {
-  res.sendFile(path.resolve('./public/index.html'));
-});
+// app.get('/', (req, res) => {
+//   res.sendFile(path.resolve('./public/index.html'));
+// });
 
 app.listen(port, () => {
   console.log(`Server started and listening on ${port}`);

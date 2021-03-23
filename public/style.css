@@ -1,0 +1,11 @@
+body {
+  background-color: #333300;
+  color: #FFFFFF;
+ }
+
+ .banner-title {
+  font-family: OpenSans-Bold;
+  font-size: 34px;
+  line-height: 46px;
+  margin-bottom: 24px;
+}
