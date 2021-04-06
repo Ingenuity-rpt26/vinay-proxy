@@ -12,9 +12,9 @@ app.use(cors());
 let port = 3000;
 
 
-// app.get('/', (req, res) => {
-//   res.sendFile(path.resolve('./public/index.html'));
-// });
+app.get('/:id', (req, res) => {
+  res.sendFile(path.resolve('./public/index.html'));
+});
 
 app.listen(port, () => {
   console.log(`Server started and listening on ${port}`);
